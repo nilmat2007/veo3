@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        textarea { width: 100%; height: 100px; }
+        button { padding: 10px; margin: 10px 0; }
+        #output { margin-top: 20px; border: 1px solid #ccc; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>สร้างเนื้อหา, เสียง, วิดีโอ ด้วย Gemini API</h1>
+    <p>พิมพ์พรอมต์ที่ต้องการ (เช่น "สร้างเรื่องสั้นเกี่ยวกับแมวในอวกาศ") แล้วเลือกประเภท</p>
+    
+    <textarea id="prompt" placeholder="พิมพ์พรอมต์ที่นี่..."></textarea>
+    
+    <button onclick="generateContent('text')">สร้างเนื้อหาข้อความ</button>
+    <button onclick="generateContent('audio')">สร้างเสียง (TTS)</button>
+    <button onclick="generateContent('video')">สร้างวิดีโอ (Veo)</button>
+    
+    <div id="output"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
